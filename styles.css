@@ -1,0 +1,70 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(90deg, rgb(255, 159, 49), rgb(242, 96, 125) ,rgb(239, 30, 30)), #ffffff;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.container {
+    text-align: center;
+    width: 300px; 
+}
+
+h1 {
+    color: #ffffff;
+}
+
+.game-board {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 72px); 
+    grid-gap: 5px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 72px; 
+    height: 72px; 
+    background-color: #100909;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #8b8b8b;
+}
+
+.cell.x {
+    color: #f44336; 
+}
+
+.cell.o {
+    color: #2196f3; 
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #181818;
+}
